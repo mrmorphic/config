@@ -1,0 +1,24 @@
+{
+	"test1":{
+		"intprop": 123,
+		"strprop": "str",
+		"boolprop": true,
+		"arrayprop": [
+			"a", "b", 999
+		],
+		"child1": {
+			"child1_2": {
+				"x": "c1_2"
+			},
+			"child1prop": 101
+		},
+		"child2": {
+			"menuTTL": 30,
+			"siteConfigTTL": 30,
+			"siteTreeTTL": 30
+		}
+	},
+	"test2": {
+		"test2prop": "t2prop"
+	}
+}
