@@ -12,7 +12,9 @@ import (
 // Concrete storage for the configuration values read. The map keys are dot-delimited.
 type Config map[string]interface{}
 
-// ReadFromFile reads the configuration from JSON in the provided path.
+// ReadFromFile reads the configuration from JSON in the provided path. The config file
+// will generally contain a single object. The properties of that object form the
+// top-level name space for Get().
 func ReadFromFile(path string) (Config, error) {
 	// read file
 	data, e := ioutil.ReadFile(path)
